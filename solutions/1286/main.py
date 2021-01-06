@@ -1,14 +1,21 @@
 class CombinationIterator:
     def __init__(self, characters: str, combinationLength: int):
+        # helper generator for combinations
         def combinations(cur, idx):
+            # check if we have a valid combination
             if len(cur) == combinationLength:
+                # join array to string
                 yield ''.join(cur)
                 return
+
+            # go through possible characters to draw from
             for i in range(idx, len(characters)):
+                # backtrack
                 cur.append(characters[i])
                 yield from combinations(cur, i + 1)
                 cur.pop()
 
+        # store helper attributes
         self.combos = combinations([], 0)
         self.current = True
         self.hasNextCalled = False
