@@ -22,6 +22,7 @@ All solutions are interview-friendly, meaning there is minimal "python golf" and
     # write
     f.write(contents)
 
-# stage changes + commit
+# stage changes + commit + push
 os.system("git add -A")
 os.system('git commit -m "update readme"')
+os.system("git push")
