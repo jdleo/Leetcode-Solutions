@@ -3,4 +3,4 @@ All solutions are done in Python. Problems are organized in `/solutions` folder 
 
 All solutions are interview-friendly, meaning there is minimal "python golf" and mostly everything can be replicated in most languages
     
-**Amount Solved**: `89`
+**Amount Solved**: `95`
